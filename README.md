@@ -21,34 +21,22 @@ Tujuan yang ingin dicapai:
 ## _Data Understanding_
 Dataset yang digunakan pada proyek ini merupakan dataset mengenai Hotel yang ada dibeberapa negara di dunia. Data yang digunakan dibuat dengan menggunakan teknik _web scraping_. Web Scraping merupakan suatu teknik yang digunakan untuk mendapatkan suatu data atau informasi pada suatu website secara otomatis [1].
 Berikut beberapa variabel yang terdapat di dalam dataset Hotel Rating:
-- _fixed acidity_ : kandungan asam organik volatilitas rendah seperti asam malat, laktat, tartarat atau sitrat
-- _volatile acidity_ : ukuran asam lemak dengan berat molekul rendah (atau dapat disuling dengan uap)
-- _citric acid_ : kandungan asam organik pada minuman dengan formula HOC(CO2H)
-- _residual sugar_ : kandungan gula 
-- _chlorides_ : kandungan klodira
-- _free sulfur dioxide_ : tingkat kandungan sulfur dioksida
-- _total sulfur dioxide_ : jumlah sulfur dioksida
-- _density_ : massa jenis minuman
-- pH : tingkat keasaman minuman
-- _sulphates_ : kandungan asam sulfat
-- _alcohol_ : kandungan alkohol minuman
-_Variabel Output:_
-- _quality_ (Nilai antara 0 sampai 10)
+- _name_ : nama hotel
+- _adress_ : alamat hotel
+- _country_ : Negara asal hotel
+- _impression_ : kesan pelanggan hotel
+- _rating_ : penilaian terhadap hotel dari 1-10
 
 Untuk lebih jelasnya data yang terdapat pada dataset tersebut dapat dilihat pada gambar berikut:
-![image](https://user-images.githubusercontent.com/62003049/187919809-943dce52-d80d-4dca-84b9-4e2a1cd86bbc.png)
+![image](https://user-images.githubusercontent.com/62003049/188322470-48878f70-c0b7-44e7-8934-fe927e8b9b21.png)
 
-
-Untuk melihat sebaran data pada dataset, dapat kita lihat melalui data histogram di bawah ini:
-![image](https://user-images.githubusercontent.com/62003049/187924117-82c8740e-92dc-4411-8216-d92f82c4608f.png)
-
-Berdasarkan data histogram 'quality' yang merupakan fitur target (label), informasi yang dapat diperoleh yaitu:
-- Wine yang terdapat pada dataset didominasi oleh wine yang memiliki kualitas bernilai 5 dan 6
-- Distribusi kualitas miring ke kanan (_right-skewed_). Hal ini akan berimplikasi pada model.
+Untuk melihat info tipe data pada dataset ini dapat dilihat pada gambar berikut:
+![image](https://user-images.githubusercontent.com/62003049/188323070-ff0f56f2-ec0c-4bf0-98ff-e8baf42309bc.png)
 
 ## _Data Preparation_
-Pada proyek ini dilakukan proses _data preparation_ yaitu:
+Pada proyek ini dilakukan proses _data preparation_ yaitu
    Pembagian dataset dengan fungsi train_test_split dari _library_ sklearn Proses pembagian dataset ini bertujuan untuk memisahkan antara data yang akan dilakukan proses training dan data yang akan digunakan untuk pengujian. Tentunya data yang digunakan untuk proses pengujian haruslah data yang belum pernah dilihat oleh model sebelumnya, sehingga proses pemisahan data ini sangat penting.
+   
 Berikut ini program yang digunakan pada proses splitting data:
    ![image](https://user-images.githubusercontent.com/62003049/187921201-9c296291-28aa-42c0-a01d-cb8dd769b8ff.png)
 
@@ -88,7 +76,7 @@ Berdasarkan hasil training model, didapatkanlah jumlah error yang paling kecil a
 ##Conclusion
 Proyek pembuatan Sistem Rekomendasi hotel telah berhasil dibua, hanya saja dikarenakan dataset yang digunakan merupakan dataset yang dibuat sendiri, sehingga data yang dimiliki masih sedikit dan masih perlu ditambah lagi. Hasil rekomendasi dapat dilihat pada gambar dibawah ini.
 
-![image](https://user-images.githubusercontent.com/62003049/187925821-d12192c4-b4c6-434d-b272-935a66e8af40.png)
+![image](https://user-images.githubusercontent.com/62003049/188322445-d4992dee-5fac-4e73-98f1-10f052683b0a.png)
 
 ##Reference
 [1] Floresi, V. A., Permatasari, P. A., Jasa, L. (2020). Penerapan Web Scraping Sebagai Media Pencarian dan Menyimpan Artikel Ilmiah Secara Otomatis Berdasarkan Keyword. Majalah Ilmiah Teknologi Elektro, 19(2). 157-162.

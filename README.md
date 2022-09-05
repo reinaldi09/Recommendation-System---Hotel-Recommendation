@@ -38,7 +38,7 @@ Untuk melihat info tipe data pada dataset ini dapat dilihat pada gambar berikut:
 Pada proyek ini dilakukan proses _data preparation_ yaitu mengonversi setiap data series menjadi dalam bentuk list pada setiap variabel yang ada pada dataset:
 ![image](https://user-images.githubusercontent.com/62003049/188323707-61bd5580-847b-4b68-bd6e-318a0e4a8778.png)
 
-Kemudian dilakukan pembuatan dictionary baru dari dataset yang ada:
+Kemudian merupakan proses _data cleaning_, data pada dataset dihapus salah satu kolom yang tidak digunakan untuk proses rekomendasi yaitu kolom impresi dengan dilakukan pembuatan dictionary baru dari dataset yang ada:
 ![image](https://user-images.githubusercontent.com/62003049/188323733-c8604da7-99a7-4ff3-9168-4862f696cbf1.png)
 
 ## _Modeling_
@@ -53,13 +53,18 @@ Model _Machine Learning_ yang digunakan pada proyek ini _Content-Based_ filterin
 - Keempat, kita membuat fungsi yang menggunakan nama hotel yang ada di data
 ![image](https://user-images.githubusercontent.com/62003049/188323640-0fd4227f-832e-4e1d-883b-f0904615768b.png)
 
-
-## _Evaluation_
-Model yang telah dibuat dapat memberikan rekomendasi nama hotel berdasarkan kesamaan tempat ketika user menggunakan nama hotel pada suatu tempat/negara. Namun, data yang dimiliki pada dataset masih sangat terbatas sehingga diperlukan _improve_ atau penambahan jumlah dataset agar lebih bervariasi lagi.
-
-Hasil rekomendasi dapat dilihat pada gambar dibawah ini.
+Hasil rekomendasi yang digunakan merupakan top-N recommendation dapat dilihat pada gambar dibawah ini.
 
 ![image](https://user-images.githubusercontent.com/62003049/188322445-d4992dee-5fac-4e73-98f1-10f052683b0a.png)
+
+
+## _Evaluation_
+Model yang telah dibuat dapat memberikan rekomendasi nama hotel berdasarkan kesamaan tempat ketika user menggunakan nama hotel pada suatu tempat/negara. Namun, data yang dimiliki pada dataset masih sangat terbatas sehingga diperlukan _improve_ atau penambahan jumlah dataset agar lebih bervariasi lagi. Berikut ini _metric evaluation_ yang digunakan adalah _precision_  yang dapat dilihat pada gambar dibawah ini.
+
+![image](https://user-images.githubusercontent.com/62003049/188518786-30d477e1-b658-4680-8b76-5dc58670aa0a.png)
+
+
+![image](https://user-images.githubusercontent.com/62003049/188518580-1ddaec29-ef59-4674-8e2a-5df7d06c4186.png)
 
 ## _Conclusion_
 Proyek pembuatan Sistem Rekomendasi hotel telah berhasil dibuat, hanya saja dikarenakan dataset yang digunakan merupakan dataset yang dibuat sendiri, sehingga data yang dimiliki masih sedikit dan masih perlu ditambah lagi sehingga kedepannya sistem rekomendasi yang dibuat dapat berdasarkan vaiabel yang lain. 

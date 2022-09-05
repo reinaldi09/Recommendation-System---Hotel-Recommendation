@@ -19,7 +19,8 @@ Tujuan yang ingin dicapai:
 - Metode machine learning yang digunakan adalah metode _content based filtering_ karena berdasarkan dataset yang digunakan, sistem akan memberikan rekomendasi hotel sesuai kesamaan tempat tujuan pengguna.
 
 ## _Data Understanding_
-Dataset yang digunakan pada proyek ini merupakan dataset mengenai Hotel yang ada dibeberapa negara di dunia. Data yang digunakan dibuat dengan menggunakan teknik _web scraping_. Web Scraping merupakan suatu teknik yang digunakan untuk mendapatkan suatu data atau informasi pada suatu website secara otomatis [1].
+Dataset yang digunakan pada proyek ini merupakan dataset mengenai Hotel yang ada dibeberapa negara di dunia. Data yang digunakan dibuat dengan menggunakan teknik _web scraping_. Web Scraping merupakan suatu teknik yang digunakan untuk mendapatkan suatu data atau informasi pada suatu website secara otomatis [1]. Pada dataset ini berisi 5 kolom dan 138 baris data.
+
 Berikut beberapa variabel yang terdapat di dalam dataset Hotel Rating:
 - _name_ : nama hotel
 - _adress_ : alamat hotel
@@ -60,8 +61,8 @@ Hasil rekomendasi dapat dilihat pada gambar dibawah ini.
 
 ![image](https://user-images.githubusercontent.com/62003049/188322445-d4992dee-5fac-4e73-98f1-10f052683b0a.png)
 
-##Conclusion
+## _Conclusion_
 Proyek pembuatan Sistem Rekomendasi hotel telah berhasil dibuat, hanya saja dikarenakan dataset yang digunakan merupakan dataset yang dibuat sendiri, sehingga data yang dimiliki masih sedikit dan masih perlu ditambah lagi sehingga kedepannya sistem rekomendasi yang dibuat dapat berdasarkan vaiabel yang lain. 
 
-##Reference
+## _Reference_
 [1] Floresi, V. A., Permatasari, P. A., Jasa, L. (2020). Penerapan Web Scraping Sebagai Media Pencarian dan Menyimpan Artikel Ilmiah Secara Otomatis Berdasarkan Keyword. Majalah Ilmiah Teknologi Elektro, 19(2). 157-162.
